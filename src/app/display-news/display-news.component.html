@@ -5,8 +5,7 @@
         <img src="{{new.jetpack_featured_media_url}}" alt="">
         <p>{{new.date}}</p>
         <h1>{{new.title.rendered}}</h1>
-        <h3>{{new.excerpt.rendered}}</h3>
-        <!-- <h3>Author - {{new.parselyMeta.parsely-author[0]}}</h3> -->
+        <h3 [innerHtml]="new.excerpt.rendered"></h3>
       </a>
     </div>
   </div>
