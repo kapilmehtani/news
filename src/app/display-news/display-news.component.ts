@@ -22,6 +22,7 @@ export class DisplayNewsComponent implements OnInit {
         console.log(data);
         this.news = data;
         console.log(this.news[0].date);
+        console.log(this.news[0].parselyMeta['parsely-author'][0]);
       });
       console.log(this.news);
 
